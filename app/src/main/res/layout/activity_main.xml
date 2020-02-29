@@ -11,10 +11,10 @@
         android:id="@+id/ll_main_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#D3050546"
         android:gravity="center"
-        android:background="#3971A7"
-        android:padding="25dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="25dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,37 +27,38 @@
 
         <EditText
             android:id="@+id/et_user_name"
-            android:hint="@string/user_name"
-            android:textColor="@color/MiColor"
-            android:textColorHint="#52afaa"
-            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:hint="@string/user_name"
+            android:textAlignment="center"
+            android:textColor="@color/MiColor"
+            android:textColorHint="#52afaa" />
 
         <EditText
             android:id="@+id/et_password"
-            android:hint="Password"
-            android:textColor="@color/MiColor"
-            android:textColorHint="#52afaa"
-            android:textAlignment="center"
-            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no" />
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/MiColor"
+            android:textColorHint="#52afaa" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="25dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="25dp">
+
             <Button
                 android:id="@+id/btn_reset"
-                android:text="Limpiar Campos"
-                android:textAllCaps="false"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@android:drawable/progress_horizontal"
+                android:text="Limpiar Campos"
+                android:textAllCaps="false"
                 tools:ignore="ButtonStyle" />
 
             <Button
